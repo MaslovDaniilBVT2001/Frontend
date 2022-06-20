@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт визитка Маслова Данила БВТ2001</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 30%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        padding: 0.6;
+        margin-bottom: 1em;
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .h1-style {
+        font-size: 60px;
+        font-weight: 600;
+        background-image: linear-gradient(to bottom, #26eeab, #4202d7);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: 400%;
+        animation-duration: 1s;
+        animation-name: sliden;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+      @keyframes sliden {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/img/MD.png" alt="logo"
+        /></a>
+        <audio controls autoplay loop>
+          <source src="/audio/Every+Little+Movement.mp3" type="audio/mpeg" />
+          <source
+            src="/audio/Every+Little+Movement — копия.ogg"
+            type="audio/ogg"
+          />
+        </audio>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html ">Любимые игры</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Змейка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <img
+            class="rounded-img"
+            src="/img/man.png1.png"
+            alt="Маслов Даниил"
+          />
+          <h1 class="h1-style">Маслов Даниил</h1>
+          <p class="lead text-muted">
+            Всем привет это мой первый сайт! Не судите строго. На этом сайте вы
+            сможете найти больше информации обо мне.Что мне нравится и чем я
+            занимаюсь.
+          </p>
+          <a href="https://vk.com/dygonright2002" target="_blank">
+            <button class="btn btn-primary">
+              <ion-icon name="logo-vk"></ion-icon>
+            </button>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCs6hvxhMIuD4S_jMO5v0n1w"
+            target="_blank"
+          >
+            <button class="btn btn-danger">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </button>
+          </a>
+          <a href="https://github.com/MaslovDaniilBVT2001" target="_blank">
+            <button class="btn btn-dark">
+              <ion-icon name="logo-github"></ion-icon>
+            </button>
+          </a>
+          <a href="https://discord.gg/NrWME4jT" target="_blank">
+            <button class="btn btn-primary">
+              <ion-icon name="logo-discord"></ion-icon>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
