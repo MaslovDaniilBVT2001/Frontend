@@ -19,17 +19,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/dark.css" id="theme" />
     <style>
       .card {
-        border-radius: 1em;
+        border-radius: 0.5em;
         text-align: center;
+        animation-duration: 3s;
+        animation-name: sliden;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+      }
+      @keyframes sliden {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
       }
       .card:hover {
         background-color: rgba(0, 0, 0, 0.2);
-      }
-      .card img {
-        border-radius: 50%;
-        padding: 1em;
       }
     </style>
   </head>
@@ -37,8 +49,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="/img/MD.png" alt="logo"
+          <img src="/DM.png" alt="logo" width="100"
         /></a>
+        <button class="button" id="switchMode">
+          <img src="/солце/pngegg.png" width="50" alt="" />
+        </button>
         <audio controls loop>
           <source src="/audio/Every+Little+Movement.mp3" type="audio/mpeg" />
           <source
@@ -68,9 +83,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Змейка</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -78,78 +90,95 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
       <div class="col">
         <div class="card">
-          <img
-            src="/img/Dota2_photo-resizer.ru.png"
-            class="card-img-top"
-            alt="..."
-          />
+          <a href="https://www.dota2.com/home" target="_blank">
+            <img
+              src="/img/Dota2_photo-resizer.ru.png"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
+
           <div class="card-body">
             <h5 class="card-title">Dota 2</h5>
-            <p class="card-text">
-              Dota 2 — многопользовательская командная компьютерная игра в жанре
-              MOBA, разработанная и изданная корпорацией Valve. Игра является
-              продолжением DotA — пользовательской карты-модификации для игры
-              Warcraft III: Reign of Chaos и дополнения к ней Warcraft III: The
-              Frozen Throne.
-            </p>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img
-            src="/img/МИДЛ.png"
-            class="card-img-top"
-            alt="Middle-earth: Shadow of Mordor"
-          />
+          <a href="https://shadowofwar.com/ru/purchase/" target="_blank"
+            ><img
+              src="/img/МИДЛ.png"
+              class="card-img-top"
+              alt="Middle-earth: Shadow of Mordor"
+          /></a>
           <div class="card-body">
             <h5 class="card-title">Middle-earth: Shadow of Mordor</h5>
-            <p class="card-text">
-              Middle-earth: Shadow of Mordor (рус. Средиземье: Тени Мордора[2])
-              — мультиплатформенная компьютерная игра в жанре Action/RPG,
-              разработанная Monolith Productions и изданная Warner Bros.
-              Interactive Entertainment. Игра была выпущена на Windows, Xbox One
-              и PlayStation 30 сентября 2014 года, а на платформы Xbox 360 и
-              PlayStation 3 выход состоялся только 18 ноября 2014 года.
-            </p>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="/img/DBD.png" class="card-img-top" alt="Dead by Daylight" />
+          <a
+            href="https://store.epicgames.com/ru/p/dead-by-daylight"
+            target="_blank"
+            ><img
+              src="/img/DBD.png"
+              class="card-img-top"
+              alt="Dead by Daylight"
+          /></a>
           <div class="card-body">
             <h5 class="card-title">Dead by Daylight</h5>
-            <p class="card-text">
-              Dead by Daylight - это многопользовательская игра в жанре ужасов в
-              режиме (4 против 1), где один игрок берет на себя роль жестокого
-              Убийцы, а четыре других игрока являются Выжившими, пытающимися
-              сбежать от убийцы. Выжившие играют от третьего лица и имеют
-              преимущество в ситуационной осведомленности.
-            </p>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img
-            src="/img/Снимок экрана 2022-06-16 122149_photo-resizer.ru.png"
-            class="card-img-top"
-            alt="Prince of persia the two thrones"
-          />
+          <a href="https://steamcommunity.com/app/13530" target="_blank"
+            ><img
+              src="/img/Снимок экрана 2022-06-16 122149_photo-resizer.ru.png"
+              class="card-img-top"
+              alt="Prince of persia the two thrones"
+          /></a>
           <div class="card-body">
             <h5 class="card-title">Prince of persia the two thrones</h5>
-            <p class="card-text">
-              Prince of Persia: The Two Thrones (рус. Принц Персии: Два Трона) —
-              компьютерная игра, разработанная компанией Ubisoft для Xbox, PC,
-              PlayStation 2 и GameCube. Игра вышла в декабре 2005 года, в
-              Северной Америке и Европе. Версия для PlayStation Portable и Wii
-              вышла в апреле 2007 года под названием Prince of Persia: Rival
-              Swords.
-            </p>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://www.frostpunkgame.com/" target="_blank"
+            ><img
+              src="/img/Снимок экрана 2022-06-28 122543_photo-resizer.ru.png"
+              class="card-img-top"
+              alt="Frostpunk"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Frostpunk</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a
+            href="https://steamcommunity.com/app/42640/screenshots/"
+            target="_blank"
+            ><img
+              src="/img/Снимок экрана 2022-06-28 123132_photo-resizer.ru.png"
+              class="card-img-top"
+              alt="Blur"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Blur</h5>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

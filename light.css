@@ -1,0 +1,55 @@
+body {
+  background: #ffffff;
+}
+.rounded-img {
+  width: 60%;
+  border-radius: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 0.6;
+  margin-bottom: 1em;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.h1-style {
+  font-size: 60px;
+  font-weight: 600;
+  background-image: linear-gradient(to bottom, #26eeab, #4202d7);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400%;
+  animation-duration: 1s;
+  animation-name: sliden;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+@keyframes sliden {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.text {
+  background-image: linear-gradient(to bottom, #000000, #323232);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.button {
+  background-color: #323232;
+  color: #acacac;
+}
